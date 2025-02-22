@@ -20,3 +20,73 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+# This repository contains code from multiple open-source projects, which are licensed under different licenses.
+
+## Apktool License (Apache License 2.0)
+
+                           Apache License
+                     Version 2.0, January 2004
+                  http://www.apache.org/licenses/
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+1. Definitions.
+   "License" shall mean the terms and conditions for use, reproduction, and distribution as defined in this document.
+   "Licensor" shall mean the copyright owner or entity that is granting the License.
+   "You" (or "Your") shall mean an individual or a legal entity exercising permissions granted by this License.
+   "Source" form shall mean the preferred form for making modifications to the work.
+   "Object" form shall mean any form resulting from mechanical transformation or translation of the work.
+   "Work" shall mean the work of authorship, whether in Source or Object form, made available under the License.
+   "Derivative Works" shall mean any work that is based on the Work and incorporates elements of the Work, including modifications, translations, or adaptations.
+   "Contribution" shall mean any modification or addition to the Work.
+
+2. Grant of Copyright License.
+   The Licensor hereby grants You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, sublicense, and distribute the Work.
+
+3. Grant of Patent License.
+   The Licensor hereby grants You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable patent license to make, have made, use, sell, offer for sale, import, and otherwise transfer the Work.
+
+4. Redistribution.
+   You may reproduce and distribute copies of the Work in Object form or Source form, provided that you meet the following conditions:
+   - You must include a copy of this License in the documentation or other materials provided with the distribution.
+   - You must provide appropriate attribution to the Licensor.
+
+5. Modifications.
+   You may modify the Work or create Derivative Works, provided that you meet the following conditions:
+   - You must include a prominent notice stating that you have changed the Work.
+   - You must not use the names, trademarks, or other identifiers of the Licensor, except as required to indicate the origin of the Work.
+
+6. No Warranty.
+   The Work is provided on an "AS IS" basis, without warranties or conditions of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or noninfringement.
+
+7. Limitation of Liability.
+   In no event and under no legal theory, whether in tort, contract, or otherwise, shall the Licensor be liable to You for damages, including any general, special, incidental, or consequential damages arising out of the use of the Work.
+
+END OF TERMS AND CONDITIONS
+
+
+## Il2CppDumper License (MIT License)
+
+MIT License
+
+Copyright (c) 2016 Perfare
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
