@@ -75,6 +75,12 @@ Feel free to contribute by opening an issue or creating a pull request! Here are
 - Help with code improvements and optimizations.
 
 ---
+## Acknowledgments
+
+- **Apktool**: Used for APK decompiling. Licensed under the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0).
+- **Il2CppDumper**: Used for dumping Unity `.so` files. Licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+---
 
 ## 📝 **Disclaimer**
 
