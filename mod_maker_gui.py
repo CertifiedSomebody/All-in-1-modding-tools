@@ -72,8 +72,27 @@ class ModMakerGUI(QWidget):
     def run_command(self, cmd):
         self.worker = ProcessWorker(cmd)
         self.worker.output.connect(self.log)
-        self.worker.finished.connect(lambda: self.log("✅ Process Completed!\n"))
+        self.worker.finished.connect(self.on_task_finished)
         self.worker.start()
+
+        # Disable buttons while the task is running
+        self.merge_button.setEnabled(False)
+        self.clean_merged_button.setEnabled(False)
+        self.decompile_button.setEnabled(False)
+        self.dump_so_button.setEnabled(False)
+        self.clean_decompiled_button.setEnabled(False)
+        self.clean_dump_button.setEnabled(False)
+
+    def on_task_finished(self):
+        # Re-enable buttons after task completion
+        self.merge_button.setEnabled(True)
+        self.clean_merged_button.setEnabled(True)
+        self.decompile_button.setEnabled(True)
+        self.dump_so_button.setEnabled(True)
+        self.clean_decompiled_button.setEnabled(True)
+        self.clean_dump_button.setEnabled(True)
+
+        self.log("✅ Process Completed!\n")
 
     def select_file(self, file_filter):
         options = QFileDialog.Options()
@@ -82,7 +101,8 @@ class ModMakerGUI(QWidget):
 
     def merge_and_sign(self):
         xapk_path = self.select_file("XAPK Files (*.xapk)")
-        if not xapk_path:
+        if not xapk_path or not os.path.exists(xapk_path):
+            self.log("❌ XAPK file not found or invalid.")
             return
         xapk_name = os.path.basename(xapk_path).replace(".xapk", "")
         merged_apk = f"{xapk_name} merged.apk"
@@ -134,12 +154,24 @@ class ModMakerGUI(QWidget):
         self.run_command(cmd)
 
     def clean_decompiled_apks(self):
-        self.log("🧹 Cleaning Decompiled APKs...")
-        self.run_command('python "cleanup.py" "decompiled_apks"')
+        response = QMessageBox.question(
+            self, "Confirm Cleanup",
+            "Are you sure you want to clean the Decompiled APKs folder?",
+            QMessageBox.Yes | QMessageBox.No
+        )
+        if response == QMessageBox.Yes:
+            self.log("🧹 Cleaning Decompiled APKs...")
+            self.run_command('python "cleanup.py" "decompiled_apks"')
 
     def clean_dump_folder(self):
-        self.log("🧹 Cleaning Dump Folder...")
-        self.run_command('python "cleanup.py" "dumps"')
+        response = QMessageBox.question(
+            self, "Confirm Cleanup",
+            "Are you sure you want to clean the Dump folder?",
+            QMessageBox.Yes | QMessageBox.No
+        )
+        if response == QMessageBox.Yes:
+            self.log("🧹 Cleaning Dump Folder...")
+            self.run_command('python "cleanup.py" "dumps"')
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
